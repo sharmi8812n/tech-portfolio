@@ -1,0 +1,6 @@
+# Payroll Run Instructions
+1. Login to Oracle EBS HRMS/Payroll module.
+2. Navigate to Payroll -> Define Payroll -> Run Payroll.
+3. Select the sample employees.
+4. Validate and post payroll.
+5. Generate payslips.
