@@ -1,26 +1,67 @@
-# graphql-java-spring-boot-example
-Sample app for my tutorial [Building a GraphQL Server with Spring Boot](https://app.pluralsight.com/guides/building-a-graphql-server-with-spring-boot). 
+# 🌐 Spring Boot GraphQL CRUD Example
 
-Updated by [@Ansonator](https://github.com/Ansonator) to recent versions of Spring Boot and GraphQL Java.
+A sample **Spring Boot** application demonstrating a full **GraphQL API** with CRUD operations using **Spring for GraphQL**, **Spring Data JPA**, and an **H2 in-memory database**. This project includes queries, mutations, and an interactive **GraphiQL interface**.
 
-The [tutorial branch](https://github.com/eh3rrera/graphql-java-spring-boot-example/tree/tutorial) contains the original demo app.
+---
 
-You'll need [Java 11 or 17](https://www.oracle.com/java/technologies/downloads/).
+## 📌 Features
 
-Clone this repo and execute `mvnw spring-boot:run`. Or inside an IDE, execute the class `com.example.DemoGraphQL.DemoGraphQlApplication`.
+- **CRUD Operations**: Create, Read, Update, Delete entities
+- **GraphQL Queries & Mutations**: Define and resolve API operations
+- **Spring Data JPA**: Database interaction with JPA repositories
+- **H2 Database**: In-memory database for quick testing
+- **GraphiQL Interface**: Interactive query editor
+- **Spring Boot 3.x**: Quick setup with embedded Tomcat
 
-To access the database, you can go to [http://localhost:8080/h2-console/login.jsp](http://localhost:8080/h2-console/login.jsp) and enter the following information:
-- JDBC URL: jdbc:h2:mem:testdb
-- User Name: sa
-- Password: <blank>
+---
 
-Or go to [http://localhost:8080/graphiql](http://localhost:8080/graphiql) to start executing queries. For example:
-```
-{
+## 🛠 Tech Stack
+
+- **Java 17+**
+- **Spring Boot 3.x**
+- **Spring for GraphQL**
+- **Spring Data JPA**
+- **H2 Database**
+- **GraphiQL**
+- **Maven**
+
+---
+
+## Run the Application: mvn spring-boot:run
+## Access GraphiQL Interface: http://localhost:8080/graphiql
+
+type Author {
+  id: ID!
+  firstName: String!
+  lastName: String!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  isbn: String!
+  pageCount: Int!
+  author: Author!
+}
+
+type Query {
+  findAllBooks: [Book]
+  findBookById(id: ID!): Book
+}
+
+type Mutation {
+  newBook(title: String!, isbn: String!, pageCount: Int!, authorId: ID!): Book
+  updateBook(id: ID!, title: String, isbn: String, pageCount: Int): Book
+  deleteBook(id: ID!): Boolean
+}
+
+
+Fetch All Books:
+query {
   findAllBooks {
     id
-    isbn
     title
+    isbn
     pageCount
     author {
       firstName
@@ -28,29 +69,34 @@ Or go to [http://localhost:8080/graphiql](http://localhost:8080/graphiql) to sta
     }
   }
 }
-```
 
-Or:
-```
+Create a New Book:
 mutation {
   newBook(
-    title: "Java: The Complete Reference, Tenth Edition", 
-    isbn: "1259589331", 
-    author: 1) {
-      id title
+    title: "Spring Boot in Action"
+    isbn: "9781617292545"
+    pageCount: 300
+    authorId: 1
+  ) {
+    id
+    title
   }
 }
-```
 
-# Extras
+Update a Book:
+mutation {
+  updateBook(id: 1, title: "Updated Book Title") {
+    id
+    title
+  }
+}
 
-This build demos some UIs hosted at [graphql-java-kickstart](https://github.com/graphql-java-kickstart/graphql-spring-boot).
-  * Launch with `mvn spring-boot:run`
-  * Open a browser to view UIs at the following links:
-    * [GraphiQL](http://localhost:8080/graphiql)
-    * [Altair](http://localhost:8080/altair)
-    * [Playground](http://localhost:8080/playground)  
-    * [Voyager](http://localhost:8080/voyager)
+Delete a Book:
+mutation {
+  deleteBook(id: 1)
+}
 
-# License
-MIT
+
+
+## 📂 Project Structure
+
