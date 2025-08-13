@@ -12,10 +12,10 @@ Welcome to my GitHub portfolio! Below you'll find projects and code snippets sho
 ## Projects
 
 ### 1. **Java/Spring Boot**
-- **Spring Boot Project **: Description, features, and tech stack used.
+- **Spring Boot Project**: Description, features, and tech stack used.
 
 ### 2. **Angular**
-- **Angular App **: Description, features, and tech stack used.
+- **Angular App**: Description, features, and tech stack used.
 
 
 ### 3. **Oracle Technologies**
