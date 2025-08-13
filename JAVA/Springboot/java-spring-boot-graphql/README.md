@@ -96,7 +96,3 @@ mutation {
   deleteBook(id: 1)
 }
 
-
-
-## 📂 Project Structure
-
