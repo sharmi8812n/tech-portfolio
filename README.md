@@ -28,7 +28,7 @@ Welcome to my GitHub portfolio! Below you'll find projects and code snippets sho
 
 ## How to Use the Code
 
-1. Clone the repository: `git clone https://github.com/sharmi8812n/portfolio.git`
+1. Clone the repository: `git clone https://github.com/sharmi8812n/tech-portfolio.git`
 2. Follow setup instructions in individual project folders.
 
 ## Contact
