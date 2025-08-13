@@ -1,4 +1,4 @@
-# Spring Boot My Batis Implementation
+# Spring Boot MyBatis Implementation
 
 **Project uses following package/technologies**
 
