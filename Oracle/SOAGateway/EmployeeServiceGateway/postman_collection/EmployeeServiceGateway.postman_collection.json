@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "EmployeeServiceGateway",
+    "_postman_id": "12345678-1234-1234-1234-123456789012",
+    "description": "Test collection for EmployeeServiceGateway REST endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Employee",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7001/EmployeeServiceGateway/employees/1001",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "7001",
+          "path": ["EmployeeServiceGateway","employees","1001"]
+        }
+      }
+    }
+  ]
+}

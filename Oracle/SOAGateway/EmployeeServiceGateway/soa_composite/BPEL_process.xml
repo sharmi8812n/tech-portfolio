@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process name="EmployeeProcess" targetNamespace="http://example.com/employee" xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+    <!-- Receive REST Request -->
+    <!-- Assign input to DB variables -->
+    <!-- Invoke DB Adapter -->
+    <!-- Reply JSON response -->
+</process>
