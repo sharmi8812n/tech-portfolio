@@ -1,13 +1,13 @@
 ## Oracle Integration Cloud (OIC)
  Oracle Integration Cloud is a cloud-based platform by Oracle for integrating applications, services, and processes. It allows you to connect:
-Cloud apps (like Oracle ERP Cloud, Salesforce, ServiceNow)
-On-premises apps (like Oracle E-Business Suite, SAP)
-APIs and SaaS services
-OIC provides tools for:
-Application Integration – orchestrate data and processes between systems.
-Process Automation – design human workflows and approvals.
-Visual Flow Designer – drag-and-drop interface for creating integrations.
-Adapters – pre-built connectors for Oracle and third-party applications.
+## Cloud apps (like Oracle ERP Cloud, Salesforce, ServiceNow)
+## On-premises apps (like Oracle E-Business Suite, SAP)
+## APIs and SaaS services
+## OIC provides tools for:
+   Application Integration – orchestrate data and processes between systems.
+   Process Automation – design human workflows and approvals.
+   Visual Flow Designer – drag-and-drop interface for creating integrations.
+   Adapters – pre-built connectors for Oracle and third-party applications.
 
 ## 4️⃣How to Setup OIC
 ## Sign up / Log in
