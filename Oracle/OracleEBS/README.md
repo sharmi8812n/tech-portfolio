@@ -33,27 +33,7 @@ This project demonstrates HRMS and Payroll functionality in Oracle E-Business Su
 ## Integration (Optional)
 - Connect with Oracle Integration Cloud (OIC) to sync employee/payroll data with external systems.
   
-EBS_Employee_Payroll_Sample/
-│
-├── data/
-│   ├── employees.csv           # Sample employee data
-│   ├── departments.csv         # Sample departments
-│   ├── jobs.csv                # Sample jobs
-│
-├── sql_scripts/
-│   ├── load_employees.sql      # SQL Loader / PL/SQL scripts to insert data
-│   ├── load_departments.sql
-│   ├── load_jobs.sql
-│
-├── payroll/
-│   ├── payroll_run_instructions.txt  # Steps to run payroll in EBS
-│   └── sample_payslips.pdf           # Example payslips
-│
-├── reports/
-│   ├── employee_list_report.pdf
-│   └── payroll_journal_report.pdf
-│
-└── README.md                   # Instructions to setup and run
+<img width="732" height="607" alt="image" src="https://github.com/user-attachments/assets/207815ed-f1d4-4487-b361-c25186610784" />
 
 Setup Instructions
 1. Prerequisites
