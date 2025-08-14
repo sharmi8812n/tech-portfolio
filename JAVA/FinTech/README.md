@@ -1,4 +1,4 @@
-# Fintech Application with Java Spring Boot (Java 8 Compatible)
+# Fintech Application with Java Spring Boot 
 
 This project provides a foundation for building fintech applications using **Java 8** and **Spring Boot**. It includes account management, transaction processing, and guidance on integrating **PayPal** for digital payments.
 
