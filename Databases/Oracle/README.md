@@ -1,4 +1,4 @@
-# Oracle Database - README
+# Oracle Database
 
 ## Overview
 Oracle Database is a powerful, enterprise-grade relational database management system (RDBMS) widely used for mission-critical applications. It offers advanced features for data storage, retrieval, security, and high availability.
