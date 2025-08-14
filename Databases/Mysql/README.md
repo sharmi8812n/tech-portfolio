@@ -1,4 +1,4 @@
-# MySQL on Windows - README
+# MySQL 
 
 ## Overview
 MySQL is a popular open-source relational database system. This guide helps you install and get started with MySQL on Windows.
