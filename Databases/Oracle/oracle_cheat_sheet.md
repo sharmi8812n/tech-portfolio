@@ -1,4 +1,4 @@
-###Oracle SQL Cheat Sheet with Command Uses
+### Oracle SQL Cheat Sheet with Command Uses
 
 ## 1. Connecting to Oracle
 sqlplus username/password@hostname:port/service_name
