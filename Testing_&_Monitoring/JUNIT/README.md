@@ -50,9 +50,7 @@ class CalculatorTest {
 <img width="809" height="375" alt="image" src="https://github.com/user-attachments/assets/1c6e6486-9af1-4675-83de-85db65408430" />
 
 ## Running Tests with Maven
-
   Add JUnit 5 dependency to your pom.xml:
-  
   <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
