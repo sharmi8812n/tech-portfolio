@@ -42,7 +42,6 @@ Kubernetes (often abbreviated as K8s) is an open-source container orchestration 
 ### 3. Write Deployment YAML
 
 Example for a simple nginx deployment:
-
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -64,8 +63,8 @@ spec:
         ports:
         - containerPort: 80
 
-### 4. Apply Deployment
-  kubectl apply -f deployment.yaml
+Apply Deployment
+kubectl apply -f deployment.yaml
 
-### 5. Expose Deployment
+Expose Deployment
 kubectl expose deployment nginx-deployment --type=LoadBalancer --port=80
