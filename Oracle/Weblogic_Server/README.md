@@ -30,6 +30,7 @@ export JAVA_HOME=/path/to/jdk
 
 # Run installer
 java -jar fmw_12.2.1.x.x_wls.jar
+
 ---
 ### Step-by-Step Deployment Guide
 1. Prepare your JAR
