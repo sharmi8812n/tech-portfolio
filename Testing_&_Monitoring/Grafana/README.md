@@ -27,6 +27,19 @@ docker run -d -p 3000:3000 --name=grafana grafana/grafana
 Visit: http://localhost:3000
 Default login: admin / admin (you’ll be prompted to change it)
 
+
+
+### Server Settings
+/etc/grafana/grafana.ini
+
+Key sections to configure:
+```ini
+[server]
+http_port = 3000
+domain = yourdomain.com
+root_url = %(protocol)s://%(domain)s/
+
+
 ## 1. Access Grafana
 
 Open your browser: http://localhost:3000
@@ -48,5 +61,21 @@ Save your dashboard
 
 Configure alert rules within panels
 Set thresholds and notification channels
+
+## Docker Commands
+# Run Grafana in Docker
+docker run -d \
+  -p 3000:3000 \
+  --name=grafana \
+  -e "GF_SECURITY_ADMIN_PASSWORD=secret" \
+  grafana/grafana
+
+# Stop container
+docker stop grafana
+
+# Start container
+docker start grafana
+
 Use Alerting → Contact points to integrate Slack, Email, Webhooks, etc.
 
+<img width="814" height="325" alt="image" src="https://github.com/user-attachments/assets/c1cfb275-9d64-41a8-ada9-36e14d1213b3" />
