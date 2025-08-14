@@ -1,3 +1,32 @@
+# PostgreSQL SQL
+
+## Overview
+PostgreSQL is a powerful, open-source object-relational database system known for its robustness, extensibility, and standards compliance.
+
+---
+
+## Features
+- ACID-compliant transactions
+- Advanced data types (JSON, arrays, UUID, etc.)
+- MVCC for concurrent access
+- Support for procedural languages (PL/pgSQL)
+- Extensible indexing and full-text search
+- Strong community and frequent updates
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+- Supported OS (Linux, Windows, macOS)
+- 1 GB RAM minimum recommended
+
+### Installation
+- On Ubuntu/Debian:
+  ```bash
+  sudo apt update
+  sudo apt install postgresql postgresql-contrib
+
 1. Connecting to PostgreSQL
 psql -h hostname -p port -U username -d database
 Use: Connect to a PostgreSQL database from command line.
