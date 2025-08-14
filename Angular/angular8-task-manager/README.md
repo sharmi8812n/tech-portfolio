@@ -17,6 +17,8 @@ A task management app with a dashboard and charts.
 
 ## ▶️ Run Locally
 ```bash
+npm cache clean --force    
 npm install
+npm install   --legacy-peer-deps
 npm start
 ```
