@@ -64,51 +64,48 @@ Feature: Login functionality
 </dependencies>
 
 ### 2. Feature File Example (src/test/resources/features/login.feature)
-Feature: Login
-
-  Scenario: Successful login
-    Given the user is on login page
-    When the user enters valid credentials
-    Then the user should be redirected to the homepage
+  Feature: Login
+    Scenario: Successful login
+      Given the user is on login page
+      When the user enters valid credentials
+      Then the user should be redirected to the homepage
 
 ### 3. Step Definitions (src/test/java/stepdefinitions/LoginSteps.java)
-import io.cucumber.java.en.*;
-
-public class LoginSteps {
-
-    @Given("the user is on login page")
-    public void user_on_login_page() {
-        // Code to navigate to login page
+    import io.cucumber.java.en.*;
+    public class LoginSteps {
+    
+        @Given("the user is on login page")
+        public void user_on_login_page() {
+            // Code to navigate to login page
+        }
+    
+        @When("the user enters valid credentials")
+        public void user_enters_credentials() {
+            // Code to enter username and password
+        }
+    
+        @Then("the user should be redirected to the homepage")
+        public void user_redirected_homepage() {
+            // Code to verify user redirected
+        }
     }
-
-    @When("the user enters valid credentials")
-    public void user_enters_credentials() {
-        // Code to enter username and password
-    }
-
-    @Then("the user should be redirected to the homepage")
-    public void user_redirected_homepage() {
-        // Code to verify user redirected
-    }
-}
 
 ### 4. Test Runner (src/test/java/testrunner/TestRunner.java)
-import org.junit.runner.RunWith;
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-
-@RunWith(Cucumber.class)
-@CucumberOptions(
-    features = "src/test/resources/features",
-    glue = {"stepdefinitions"},
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
-    monochrome = true
-)
-public class TestRunner {
-}
+    import org.junit.runner.RunWith;
+    import io.cucumber.junit.Cucumber;
+    import io.cucumber.junit.CucumberOptions;
+    
+    @RunWith(Cucumber.class)
+    @CucumberOptions(
+        features = "src/test/resources/features",
+        glue = {"stepdefinitions"},
+        plugin = {"pretty", "html:target/cucumber-reports.html"},
+        monochrome = true
+    )
+    public class TestRunner {
+    }
 
 ### Running Tests
 
-Run via your IDE’s JUnit test runner or:
-
-mvn test
+    Run via your IDE’s JUnit test runner or:
+    mvn test
